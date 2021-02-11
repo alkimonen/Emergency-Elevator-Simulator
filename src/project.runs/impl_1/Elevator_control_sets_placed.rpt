@@ -1,0 +1,257 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 27 22:36:57 2018
+| Host         : LAPTOP-I88P50M2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Elevator_control_sets_placed.rpt
+| Design       : Elevator
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   185 |
+| Unused register locations in slices containing registers |  1210 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |          162 |
+|      4 |           10 |
+|      5 |            1 |
+|      6 |            1 |
+|      8 |            4 |
+|      9 |            1 |
+|     10 |            1 |
+|     12 |            3 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              74 |           23 |
+| No           | No                    | Yes                    |             112 |          111 |
+| No           | Yes                   | No                     |              54 |           54 |
+| Yes          | No                    | No                     |              82 |           24 |
+| Yes          | No                    | Yes                    |              28 |           14 |
+| Yes          | Yes                   | No                     |              48 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+-------------------------------------------+--------------------------------------+------------------+----------------+
+|              Clock Signal             |               Enable Signal               |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++---------------------------------------+-------------------------------------------+--------------------------------------+------------------+----------------+
+|  counter_reg[10]_LDC_i_1_n_0          |                                           | counter_reg[10]_LDC_i_2_n_0          |                1 |              1 |
+|  movement_counter_reg[9]_LDC_i_1_n_0  |                                           | movement_counter_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[10]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[0]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[0]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[12]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[15]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[13]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[11]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[11]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[14]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[17]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[17]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[18]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[18]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[14]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[12]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[10]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[13]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[16]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[15]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[16]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[20]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[19]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[24]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[23]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[1]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[22]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[23]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[22]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[20]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[25]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[1]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[21]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[26]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[25]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[21]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[26]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[24]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[19]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[2]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[3]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[4]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[27]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[28]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[3]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[28]_LDC_i_2_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[5]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[6]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[4]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[7]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[2]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[5]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[6]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[7]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[8]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[27]_LDC_i_1_n_0          |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[8]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[9]_LDC_i_2_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | counter_reg[9]_LDC_i_1_n_0           |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[10]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[14]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[15]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[11]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[12]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[13]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[14]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[16]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[0]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[13]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[16]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[12]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[15]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[19]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[21]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[21]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[18]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[18]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[22]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[17]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[1]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[20]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[20]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[17]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[22]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[24]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[24]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[19]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[23]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[23]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[3]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[4]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[6]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[8]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[7]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[5]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[2]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[9]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        |                                           | movement_counter_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  counter_reg[0]_LDC_i_1_n_0           |                                           | counter_reg[0]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[13]_LDC_i_1_n_0          |                                           | counter_reg[13]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[11]_LDC_i_1_n_0          |                                           | counter_reg[11]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[17]_LDC_i_1_n_0          |                                           | counter_reg[17]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[18]_LDC_i_1_n_0          |                                           | counter_reg[18]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[14]_LDC_i_1_n_0          |                                           | counter_reg[14]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[12]_LDC_i_1_n_0          |                                           | counter_reg[12]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[16]_LDC_i_1_n_0          |                                           | counter_reg[16]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[15]_LDC_i_1_n_0          |                                           | counter_reg[15]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[19]_LDC_i_1_n_0          |                                           | counter_reg[19]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[1]_LDC_i_1_n_0           |                                           | counter_reg[1]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[23]_LDC_i_1_n_0          |                                           | counter_reg[23]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[22]_LDC_i_1_n_0          |                                           | counter_reg[22]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[20]_LDC_i_1_n_0          |                                           | counter_reg[20]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[21]_LDC_i_1_n_0          |                                           | counter_reg[21]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[25]_LDC_i_1_n_0          |                                           | counter_reg[25]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[26]_LDC_i_1_n_0          |                                           | counter_reg[26]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[24]_LDC_i_1_n_0          |                                           | counter_reg[24]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[2]_LDC_i_1_n_0           |                                           | counter_reg[2]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[28]_LDC_i_1_n_0          |                                           | counter_reg[28]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[3]_LDC_i_1_n_0           |                                           | counter_reg[3]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[6]_LDC_i_1_n_0           |                                           | counter_reg[6]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[4]_LDC_i_1_n_0           |                                           | counter_reg[4]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[7]_LDC_i_1_n_0           |                                           | counter_reg[7]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[5]_LDC_i_1_n_0           |                                           | counter_reg[5]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[8]_LDC_i_1_n_0           |                                           | counter_reg[8]_LDC_i_2_n_0           |                1 |              1 |
+|  counter_reg[27]_LDC_i_1_n_0          |                                           | counter_reg[27]_LDC_i_2_n_0          |                1 |              1 |
+|  counter_reg[9]_LDC_i_1_n_0           |                                           | counter_reg[9]_LDC_i_2_n_0           |                1 |              1 |
+|  movement_counter_reg[10]_LDC_i_1_n_0 |                                           | movement_counter_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[11]_LDC_i_1_n_0 |                                           | movement_counter_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[12]_LDC_i_1_n_0 |                                           | movement_counter_reg[12]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[14]_LDC_i_1_n_0 |                                           | movement_counter_reg[14]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[0]_LDC_i_1_n_0  |                                           | movement_counter_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[13]_LDC_i_1_n_0 |                                           | movement_counter_reg[13]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[16]_LDC_i_1_n_0 |                                           | movement_counter_reg[16]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[15]_LDC_i_1_n_0 |                                           | movement_counter_reg[15]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[19]_LDC_i_1_n_0 |                                           | movement_counter_reg[19]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[21]_LDC_i_1_n_0 |                                           | movement_counter_reg[21]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[18]_LDC_i_1_n_0 |                                           | movement_counter_reg[18]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[22]_LDC_i_1_n_0 |                                           | movement_counter_reg[22]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[1]_LDC_i_1_n_0  |                                           | movement_counter_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[20]_LDC_i_1_n_0 |                                           | movement_counter_reg[20]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[17]_LDC_i_1_n_0 |                                           | movement_counter_reg[17]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[24]_LDC_i_1_n_0 |                                           | movement_counter_reg[24]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[23]_LDC_i_1_n_0 |                                           | movement_counter_reg[23]_LDC_i_2_n_0 |                1 |              1 |
+|  movement_counter_reg[3]_LDC_i_1_n_0  |                                           | movement_counter_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[4]_LDC_i_1_n_0  |                                           | movement_counter_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[6]_LDC_i_1_n_0  |                                           | movement_counter_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[8]_LDC_i_1_n_0  |                                           | movement_counter_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[7]_LDC_i_1_n_0  |                                           | movement_counter_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[5]_LDC_i_1_n_0  |                                           | movement_counter_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  movement_counter_reg[2]_LDC_i_1_n_0  |                                           | movement_counter_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG                        | f3[3]_i_1_n_0                             | resetSystem_IBUF                     |                2 |              4 |
+|  clk_IBUF_BUFG                        | f2[3]_i_1_n_0                             | resetSystem_IBUF                     |                3 |              4 |
+|  clk_IBUF_BUFG                        | f1[3]_i_1_n_0                             | resetSystem_IBUF                     |                3 |              4 |
+|  clk_IBUF_BUFG                        | in0[3]_i_1_n_0                            | resetSystem_IBUF                     |                3 |              4 |
+|  clk_IBUF_BUFG                        | in3[3]_i_1_n_0                            | resetSystem_IBUF                     |                1 |              4 |
+|  clk_IBUF_BUFG                        | in1[3]_i_1_n_0                            | resetSystem_IBUF                     |                1 |              4 |
+|  clk_IBUF_BUFG                        | in2[3]_i_1_n_0                            | resetSystem_IBUF                     |                1 |              4 |
+|  clk_IBUF_BUFG                        | keypad4X4_inst0/FSM_onehot_row[4]_i_1_n_0 |                                      |                1 |              4 |
+|  clk_IBUF_BUFG                        |                                           | resetSystem_IBUF                     |                3 |              4 |
+|  clk_IBUF_BUFG                        | carry[3]_i_1_n_0                          |                                      |                2 |              4 |
+|  clk_IBUF_BUFG                        | display_8x8_0/bit_sent_count[4]_i_1_n_0   |                                      |                2 |              5 |
+|  clk_IBUF_BUFG                        | keypad4X4_inst0/count_deb                 | keypad4X4_inst0/count_deb[5]_i_1_n_0 |                1 |              6 |
+|  clk_IBUF_BUFG                        | image_blue0_in[1]                         | image_red[0][7]_i_1_n_0              |                3 |              8 |
+|  clk_IBUF_BUFG                        | image_blue0_in[5]                         | image_red[0][7]_i_1_n_0              |                3 |              8 |
+|  clk_IBUF_BUFG                        | image_blue0_in[7]                         | image_red[0][7]_i_1_n_0              |                3 |              8 |
+|  clk_IBUF_BUFG                        | image_blue0_in[3]                         | image_red[0][7]_i_1_n_0              |                3 |              8 |
+|  clk_IBUF_BUFG                        | keypad4X4_inst0/clk_en2                   |                                      |                3 |              9 |
+|  clk_IBUF_BUFG                        | display_8x8_0/clk_en_slow                 | display_8x8_0/op_count[9]_i_1_n_0    |                3 |             10 |
+|  clk_IBUF_BUFG                        | p_0_out[5]                                |                                      |                4 |             12 |
+|  clk_IBUF_BUFG                        | p_0_out[7]                                |                                      |                4 |             12 |
+|  clk_IBUF_BUFG                        | p_0_out[3]                                |                                      |                4 |             12 |
+|  clk_IBUF_BUFG                        | display_8x8_0/color_data[0]_i_1_n_0       |                                      |                4 |             24 |
+|  clk_IBUF_BUFG                        |                                           |                                      |               23 |             74 |
++---------------------------------------+-------------------------------------------+--------------------------------------+------------------+----------------+
+
+
